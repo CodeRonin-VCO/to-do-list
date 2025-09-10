@@ -1,0 +1,25 @@
+:root {
+    --text: #2E2E2E;
+    --title: #1A4D8F;
+    --bg-section: #F7F9FC;
+
+    --button-bg: #3B82F6;
+    --button-hover: #2563EB;
+    --button-bg2: #26c6da;
+
+    --accent: #A7F3D0;
+    --error: #EF4444;
+    --warning: #F97316;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: var(--text);
+        background-color: #ffffff;
+    }
+
+}
