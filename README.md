@@ -1,12 +1,16 @@
-# React + Vite
+# To Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cette application est une petite To Do List développée avec React, conçue pour gérer des tâches simplement et efficacement. Elle utilise un fichier JSON comme base de données locale, ce qui en fait une solution légère et sans serveur.
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    - Ajouter, modifier et supprimer des tâches
+    - Marquer une tâche comme terminée
+    - Persistance des données via un fichier JSON
+    - Interface responsive et minimaliste
 
-## Expanding the ESLint configuration
+## Technologies utilisées
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    - React : pour la construction de l’interface utilisateur
+    - fs (File System) : pour la lecture/écriture dans un fichier .json local (simulant une base de données)
+    - CSS Modules : pour le style des composants
