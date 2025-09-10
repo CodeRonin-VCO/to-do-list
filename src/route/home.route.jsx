@@ -6,11 +6,11 @@ import MainHomePage from "../pages/home/home.page.jsx";
 export default function HomePage() {
 
     return (
-        <>
+        <div className="page">
             <HeaderPage />
             <MainHomePage />
             {/* <FooterPage />   */}
-        </>
+        </div>
     )
     
 }

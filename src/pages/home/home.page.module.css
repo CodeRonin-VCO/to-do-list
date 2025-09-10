@@ -1,6 +1,7 @@
 .main {
     display: flex;
     position: relative;
+    flex-grow: 1;
 }
 
 .lateral_menu {
@@ -45,7 +46,6 @@
 
 .container {
     width: 100%;
-    min-height: 100vh;
     margin-left: 25rem;
     background-color: var(--bg-section);
 }

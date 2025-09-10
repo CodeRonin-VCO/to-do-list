@@ -1,0 +1,4 @@
+.main {
+    background-color: var(--bg-section);
+    flex-grow: 1;
+}

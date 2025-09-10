@@ -16,6 +16,12 @@
     background-color: #242424;
 }
 
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         color: var(--text);
