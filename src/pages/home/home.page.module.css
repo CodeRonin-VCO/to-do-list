@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    position: relative;
+}
+
+.lateral_menu {
+    width: 25rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .title_sm {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .btn_container {
+        min-height: 50vh;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: none;
+        border-radius: .8rem;
+
+        &:hover {
+            color: var(--accent);
+        }
+
+        &.active {
+            color: var(--bg-section);
+            background-color: var(--accent);
+        }
+
+    }
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 25rem;
+    background-color: var(--bg-section);
+}
