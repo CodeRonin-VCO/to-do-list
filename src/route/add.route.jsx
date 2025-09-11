@@ -9,7 +9,7 @@ export default function AddPage() {
         <div className="page">
             <HeaderPage />
             <MainAddPage />
-            {/* <FooterPage />   */}
+            <FooterPage />  
         </div>
     )
     

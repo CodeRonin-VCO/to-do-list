@@ -1,4 +1,10 @@
 .main {
+    padding: 2rem;
     background-color: var(--bg-section);
     flex-grow: 1;
+}
+
+.title {
+    padding-bottom: 2rem;
+    text-align: center;
 }
