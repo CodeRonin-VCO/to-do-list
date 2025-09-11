@@ -8,6 +8,7 @@
 .lateral_menu {
     display: flex;
     flex-direction: column;
+    flex: 1;
 
 
     @media screen and (min-width:576px) {
@@ -54,6 +55,7 @@
 
 .container {
     background-color: var(--bg-section);
+    flex: 1;
 
     @media screen and (min-width:576px) {
         margin-left: 25rem;
