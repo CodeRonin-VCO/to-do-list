@@ -1,17 +1,22 @@
 .main {
     display: flex;
+    flex-direction: column;
     position: relative;
     flex-grow: 1;
 }
 
 .lateral_menu {
-    width: 25rem;
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
+
+
+    @media screen and (min-width:576px) {
+        width: 25rem;
+        margin-top: 10rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 
     .title_sm {
         padding: 2rem 0;
@@ -19,11 +24,15 @@
     }
 
     .btn_container {
-        min-height: 50vh;
         padding: 0 1rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
+
+        @media screen and (min-width:576px) {
+            min-height: 50vh;
+            flex-direction: column;
+        }
     }
 
     .btn {
@@ -44,9 +53,11 @@
 }
 
 .container {
-    width: 100%;
-    margin-left: 25rem;
     background-color: var(--bg-section);
+
+    @media screen and (min-width:576px) {
+        margin-left: 25rem;
+    }
 }
 
 .title {
@@ -55,6 +66,7 @@
 }
 
 .task_list {
+    max-width: 100%;
     padding: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

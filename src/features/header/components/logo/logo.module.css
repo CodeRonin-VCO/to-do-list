@@ -1,7 +1,13 @@
 .logo {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_img {
     width: 20rem;
     height: 20rem;
+    transform: translateY(-50%);
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
 }
