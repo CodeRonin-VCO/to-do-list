@@ -35,27 +35,27 @@ export default function FormContact() {
         <>
             <div className={styles.container_form}>
                 <form action={handleform} className={styles.form}>
-                    <div className={styles.input_group}>
+                    <div className={styles.container_input}>
                         <label htmlFor="name">Your name</label>
                         <input type="text" id="name" name="name" />
                         {state.errors.name && (<span className={styles.error_msg}>{state.errors.name}</span>)}
                     </div>
-                    <div className={styles.input_group}>
+                    <div className={styles.container_input}>
                         <label htmlFor="email">Email address</label>
                         <input type="email" id="email" name="email" />
                         {state.errors.email && (<span className={styles.error_msg}>{state.errors.email}</span>)}
                     </div>
-                    <div className={styles.input_group}>
+                    <div className={styles.container_input}>
                         <label htmlFor="subject">Subject</label>
                         <input type="text" id="subject" name="subject" />
                         {state.errors.subject && (<span className={styles.error_msg}>{state.errors.subject}</span>)}
                     </div>
-                    <div className={styles.input_group}>
+                    <div className={styles.container_input}>
                         <label htmlFor="msg">Message</label>
                         <textarea name="msg" id="msg"></textarea>
                         {state.errors.msg && (<span className={styles.error_msg}>{state.errors.msg}</span>)}
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button className={styles.btn} type="submit">Send Message</button>
                     {state.message && (<p className={styles.message}>{state.message}</p>)}
                 </form>
             </div>

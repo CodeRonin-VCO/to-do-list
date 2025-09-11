@@ -4,8 +4,8 @@ export default function FooterPage() {
     
 
     return (
-        <>
-            <h1>I'm the footer</h1>
-        </>
+        <footer className={styles.footer}>
+            <p><small>&copy; Design with ❤️ by CodeRonin</small></p>
+        </footer>
     )
 }

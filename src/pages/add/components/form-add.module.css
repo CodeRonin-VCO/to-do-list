@@ -30,7 +30,7 @@
 
     label {
         padding-bottom: .5rem;
-        padding-top: 1rem;
+        padding-top: 2rem;
         text-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
     }
 
@@ -58,7 +58,7 @@
 
 .btn {
     padding: 1.6rem 3.2rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
     background-color: transparent;
     border: .1rem solid #0F172A;
     border-radius: 3.2rem;
@@ -67,4 +67,18 @@
     &:hover {
         background-color: #F87171;
     }
+}
+
+.error_msg {
+    color: var(--error);
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.message {
+    padding: 1rem;
+    color: var(--warning);
+    text-align: center;
 }
