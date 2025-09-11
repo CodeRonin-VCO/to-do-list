@@ -2,7 +2,7 @@
     width: 90%;
     min-height: 80vh;
     margin: auto;
-    background: url(./../../../assets/bg-colorful.jpg) no-repeat center/ cover;
+    background: url("./../../../assets/bg-colorful.jpg") no-repeat center/ cover;
     border-radius: 1.6rem;
     display: flex;
     justify-content: center;

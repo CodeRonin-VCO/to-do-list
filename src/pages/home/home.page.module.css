@@ -48,3 +48,10 @@
     margin-left: 25rem;
     background-color: var(--bg-section);
 }
+
+.task_list {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}

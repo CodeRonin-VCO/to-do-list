@@ -5,19 +5,29 @@ import { nanoid } from "nanoid";
 export default function FormAddTasks() {
     function onSubmitForm(prevState, formData) {
         const requiredFields = ["title", "theme", "desc", "date"];
-        const data = { userID: nanoid(), file: formData.get("file") }
+        const data = { userID: nanoid(), file: formData.get("file"), status: "active" }
 
         const errors = {};
+
         for (const field of requiredFields) {
+            // Get data
             const value = formData.get(field);
             data[field] = value;
+
+            // Add errors
             if (!value) {
                 errors[field] = "This field must be completed.";
             }
         }
+
         if (Object.keys(errors).length > 0) {
             return { data: null, errors, message: "Invalid data. All fields are required." }
         }
+
+        // LocalStorage
+        const existingTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        const updatedTasks = [...existingTasks, data];
+        localStorage.setItem("tasks", JSON.stringify(updatedTasks));
 
         return { data: data, message: "Your message has been sent successfully.", errors }
     }
