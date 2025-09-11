@@ -1,0 +1,104 @@
+.container_form {
+    width: 90%;
+    min-height: 90vh;
+    margin: auto;
+    color: #ffffff;
+    background: radial-gradient(ellipse at bottom, #0d1b2a 20%, #000000 100%);
+    border-radius: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width:960px) {
+        width: 70%;
+    }
+
+    .form {
+        min-width: 50%;
+        padding: 3rem;
+        font-size: clamp(1.4rem, 1.6rem + 0.5vw, 1.8rem);
+        color: #ddd;
+        display: flex;
+        flex-direction: column;
+
+        .input_group {
+            width: 100%;
+            margin: 1.5rem 0;
+            position: relative;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 1.5rem 2rem;
+                color: #ddd;
+                border: .1rem solid #ddd;
+                background-color: transparent;
+                border-radius: .8rem;
+                transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            textarea {
+                height: 20rem;
+            }
+
+            label {
+                padding: 1.5rem 0;
+                color: #ddd;
+                display: block;
+            }
+
+            input:focus,
+            textarea:focus {
+                border: .15rem solid #BA68C8;
+                outline: none;
+            }
+
+            &:focus-within label {
+                color: #BA68C8;
+            }
+
+        }
+
+        .input_group input:focus+label {
+            left: 1.2rem;
+            padding: .2rem .8rem;
+            color: #2196f3;
+            transform: translateY(-5.5rem);
+        }
+
+        .input_full+label {
+            display: none;
+        }
+
+        button {
+            width: fit-content;
+            padding: 1.6rem 3.2rem;
+            margin: 2rem auto;
+            color: #ddd;
+            font-weight: 600;
+            border: none;
+            background-color: rgba(186, 104, 200, 0.2);
+            border-radius: 3.2rem;
+            cursor: pointer;
+            transition: .3s all ease-in-out;
+
+
+            &:hover {
+                background-color: rgba(186, 104, 200, 1);
+                transform: translateY(-.3rem);
+            }
+        }
+    }
+}
+
+.error_msg {
+    color: #F52727;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.message {
+    text-align: center;
+}

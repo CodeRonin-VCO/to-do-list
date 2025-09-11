@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className="page">
             <HeaderPage />
             <MainHomePage />
-            {/* <FooterPage />   */}
+            <FooterPage />  
         </div>
     )
     
