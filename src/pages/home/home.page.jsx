@@ -67,7 +67,7 @@ export default function MainHomePage() {
             </aside>
             <div className={styles.container}>
                 <div className={styles.wrapper}>
-                    <h2>Here is all my content</h2>
+                    <h1 className={styles.title}>My tasks</h1>
                     <div className={styles.task_list}>
                         <CardsTasks
                             tasks={filteredTasks}

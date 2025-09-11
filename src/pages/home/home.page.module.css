@@ -49,6 +49,11 @@
     background-color: var(--bg-section);
 }
 
+.title {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
 .task_list {
     padding: 3rem;
     display: grid;

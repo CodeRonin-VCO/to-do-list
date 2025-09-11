@@ -13,9 +13,6 @@ export default function NavBar() {
                 <li>
                     <Link to="/add" className={styles.link}>Add tasks</Link>
                 </li>
-                <li>
-                    <Link to="/contact" className={styles.link}>Contact</Link>
-                </li>
             </ul>
         </nav>
     )
