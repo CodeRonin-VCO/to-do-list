@@ -11,9 +11,8 @@
     --error: #EF4444;
     --warning: #F97316;
 
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: var(--text);
+    background-color: #ffffff;
 }
 
 body {
@@ -28,12 +27,4 @@ body {
 
 :where(h1, h2, h3, h4, h5, h6) {
     font-family: "Indie Flower", cursive;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: var(--text);
-        background-color: #ffffff;
-    }
-
 }
